@@ -46,3 +46,10 @@ http://bar.utoronto.ca/DAP-Seq-API?target=At2g48010&tf=At1g44830
     * Last updated: May 2019 (also check Git commits)
     
     * API ReadMe template credits: https://gist.github.com/iros/3426278
+    
+* **Maintainer Notes:**
+    
+    * API that uses our geneslider API to determine the target gene locus, then uses a lookup table (JSON file) to find the appropriate track_id to create and redirect user to Ecker lab's browser. Use `DEBUG='express*,dap-seq-nodejs-api*' nodemon npm start` to start server. Port 3003 should be opened and forwarded if using Apache/NGINX.
+`
+    
+    

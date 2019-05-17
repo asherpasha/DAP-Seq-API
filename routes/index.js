@@ -3,6 +3,7 @@ var router = express.Router();
 const helpFns = require('../helperFns');
 const superagent = require('superagent');
 const AGITrackIDsHsh = require('../AGIs-to-trackIDs');
+var debug = require('debug')('dap-seq-nodejs-api:index');
 
 router.get('/', async function(req, res, next) {
   const TF = req.query.tf.toUpperCase(), target = req.query.target.toUpperCase();
@@ -23,7 +24,7 @@ router.get('/', async function(req, res, next) {
     resBasedOnTrackId(targetLoci, target, AGITrackIDsHsh[TF], TF, res);
   }
   catch (e) {
-    console.log('error', e); // TODO: handle err
+    debug('error', e);
   }
 
 });
