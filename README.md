@@ -25,6 +25,7 @@ http://bar.utoronto.ca/DAP-Seq-API?target=At2g48010&tf=At1g44830
   * Redirection to DAP-Seq SALK genome browser with modified options...
   * e.g. <http://neomorph.salk.edu/aj2/pages/hchen/dap_ath_pub.php?active=DAP+data&location=2:19641351:600:20&hide=["1_2","3_11"]&config=[{id:"1_2",height:300,scale:1.5},{id:"3_11",height:300,scale:1.5}]&settings={yaxis:250,accordion:"collapsed"}>
   * TFs with replicates will show more than one track
+   * e.g. <http://bar.utoronto.ca/DAP-Seq-API?target=At2g46330&tf=At2g33710>
   
   * **Code:** 200 <br />
  
