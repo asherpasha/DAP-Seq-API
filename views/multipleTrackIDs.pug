@@ -1,0 +1,9 @@
+html
+    head
+        title= title
+    body
+        h3=message
+         ul
+             - var IDArray = arrayOfIDs;
+             each val in IDArray
+                 li: a(href=val.url target="blank")=val.text
