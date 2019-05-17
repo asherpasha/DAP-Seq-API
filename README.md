@@ -3,7 +3,7 @@ An URL query-based API redirection tool to Dr. Joseph Ecker's (SALK) DAP-Seq Gen
 
 **DAP-Seq API @ [Bio-Analytic Resource for Plant Biology](http://bar.utoronto.ca/)**
 ----
-  Redirects user to DNA Affinity Purification (DAP)-Seq A. th. genome browser based on query parameter of TF and target gene. That is, our API will create the necessary beautified options in the genome browser such as target gene locus to allow for quicker, streamlined data visualization. Note that the authors performed some replicates on certain TFs on A. th. Col-0. For more information on the DAP-Seq method, please see the seminal [paper](https://www.ncbi.nlm.nih.gov/pubmed/27203113). API happily made with expressjs (Pug for templating).
+  Redirects user to DNA Affinity Purification (DAP)-Seq A. th. genome browser based on query parameter of TF and target gene. That is, our API will create the necessary beautified options in the genome browser such as target gene locus to allow for quicker, streamlined data visualization. Note that the authors performed some replicates on certain TFs on A. th. Col-0. For more information on the DAP-Seq method, please see the seminal [paper](https://www.ncbi.nlm.nih.gov/pubmed/27203113). API happily made with expressjs ~~(Pug for templating)~~.
 
 * **URL Example**
 
@@ -24,8 +24,7 @@ http://bar.utoronto.ca/DAP-Seq-API?target=At2g48010&tf=At1g44830
 
   * Redirection to DAP-Seq SALK genome browser with modified options...
   * e.g. <http://neomorph.salk.edu/aj2/pages/hchen/dap_ath_pub.php?active=DAP+data&location=2:19641351:600:20&hide=["1_2","3_11"]&config=[{id:"1_2",height:300,scale:1.5},{id:"3_11",height:300,scale:1.5}]&settings={yaxis:250,accordion:"collapsed"}>
-  * OR redirection to a page that links out to multiple DAP-Seq replicates
-  * e.g. <http://bar.utoronto.ca/DAP-Seq-API?target=At2g46330&tf=At2g33710>
+  * TFs with replicates will show more than one track
   
   * **Code:** 200 <br />
  
